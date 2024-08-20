@@ -1,0 +1,165 @@
+@import url("reset.css");
+
+
+img {
+    max-width: 100%;
+}
+p {
+    color: #23272A;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+header {
+    display: flex;
+    place-content: center;
+    background-image: url("../images/Header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+    margin: 50px 12px;
+    
+}
+
+header .container h1 {
+    font-family: "Luckiest Guy", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    align-self: flex-start;
+}
+header .container p {
+    color: white;
+    
+}
+
+button {
+    border-radius: 28px;
+    border: none;
+    background-color: white;
+    color: #23272A;
+    padding: 16px 0;
+}
+.btn-container {
+    margin: 0 8px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-black {
+    background-color: #23272A;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    
+}
+.content-02, .content-04 {
+    background-color: #F6F6F6;
+}
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 12px;
+    gap: 8px;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inner-04 {
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.inner-04 h2 {
+    font-family: "Luckiest Guy", sans-serif;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    background-color: #23272A;
+    place-content: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+/* Configurações pra dispositivos tela grande */
+@media screen and (min-width:836px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    header {
+        padding: 8rem;
+    }
+    header .container {
+
+        align-items: center;
+        text-align: center;
+        max-width: 60%;
+    }
+    
+    header .container h1 {
+        align-self: center;
+        font-size: 3rem;
+    }
+   
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    button {
+        padding: 12px 24px;
+    }
+    
+    .inner-container {
+        flex-direction: row;
+    }
+    .info-container {
+        width: 30%;
+    }
+
+    .inner-02 {
+        flex-direction: row-reverse;
+    }
+    .inner-04 {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
